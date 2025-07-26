@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOLOTECA — Donde el sonido deja huella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.ico">
+</head>
+<body>
+    <!-- Navegación fija -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#coleccion" class="nav-link">Colección</a>
+            <a href="https://www.instagram.com/apoloteca_/" class="nav-link" target="_blank">Instagram</a>
+        </div>
+    </nav>
+
+    <!-- Pantalla de inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Apoloteca Logo" class="logo">
+                <div class="wave-animation"></div>
+            </div>
+            <p class="hero-text">Apoloteca no es una colección. Es una forma de sentir.</p>
+            <button class="cta-button" onclick="scrollToCollection()">Ingresar a la colección</button>
+        </div>
+    </section>
+
+    <!-- Sección principal: Colección de videos -->
+    <section id="coleccion" class="collection">
+        <div class="container">
+            <h1 class="collection-title">Colección</h1>
+            <div class="video-grid" id="videoGrid">
+                <!-- Los videos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para reproducir videos -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modalVideo" controls>
+                Tu navegador no soporta el elemento video.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
